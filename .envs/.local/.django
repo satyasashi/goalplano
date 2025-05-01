@@ -12,3 +12,12 @@ REDIS_URL=redis://redis:6379/0
 # Flower
 CELERY_FLOWER_USER=debug
 CELERY_FLOWER_PASSWORD=debug
+
+# Django Superuser Creation Automated
+# ------------------------------------------------------------------------------
+DJANGO_SUPERUSER_EMAIL=admin@email.com
+DJANGO_SUPERUSER_PASSWORD=Test@123
+
+# Database URL
+# ------------------------------------------------------------------------------
+DATABASE_URL=postgres://postgres:postgres@db:5432/postgres

@@ -106,7 +106,7 @@ class Migration(migrations.Migration):
                 "abstract": False,
             },
             managers=[
-                ("objects", goalplano.users.models.UserManager()),
+                ("objects", goalplano.users.models.CustomUserManager()),
             ],
         ),
     ]

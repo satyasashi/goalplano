@@ -80,6 +80,7 @@ THIRD_PARTY_APPS = [
     "django_celery_beat",
     "rest_framework",
     "rest_framework.authtoken",
+    "dj_rest_auth",
     "corsheaders",
     "drf_spectacular",
     "django_countries",
@@ -87,8 +88,9 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "goalplano.users",
+    "goalplano.users.apps.UsersConfig",
     # Your stuff: custom apps go here
+    "goalplano.api",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -200,7 +202,7 @@ TEMPLATES = [
 
 # Development settings
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "http://localhost:5173",
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#form-renderer
