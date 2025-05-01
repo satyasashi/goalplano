@@ -278,4 +278,4 @@ goalplano/media/
 .ipython/
 .env
 .envs/*
-!.envs/.local/
+!.envs/.sample/*
